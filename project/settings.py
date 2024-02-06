@@ -132,4 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # settings.py
 
-LOGIN_REDIRECT_URL = '/todo_list/'  # Adjust the URL accordingly
+# LOGIN_REDIRECT_URL = 'todo_list/'
+
+AUTH_PASSWORD_RESET_TIMEOUT = 60 * 0.5
+AUTH_USER_MODEL = 'app.CustomUser'
